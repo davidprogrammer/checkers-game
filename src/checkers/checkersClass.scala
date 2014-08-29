@@ -220,62 +220,44 @@ class ScalaJavaFXApp extends Application {
     val hbox9 = new HBox;
     val vbox = new VBox;
 
+
+    val stackVect = Vector(new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,
+        new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane,new StackPane);
     
-    val stack1 = new StackPane(); val stack2 = new StackPane(); val stack3 = new StackPane(); val stack4 = new StackPane();
-    val stack5 = new StackPane(); val stack6 = new StackPane(); val stack7 = new StackPane(); val stack8 = new StackPane();
-    val stack9 = new StackPane(); val stack10 = new StackPane(); val stack11 = new StackPane(); val stack12 = new StackPane();
-    val stack13 = new StackPane(); val stack14 = new StackPane(); val stack15 = new StackPane(); val stack16 = new StackPane();
-    val stack17 = new StackPane(); val stack18 = new StackPane(); val stack19 = new StackPane(); val stack20 = new StackPane();
-    val stack21 = new StackPane(); val stack22 = new StackPane(); val stack23 = new StackPane(); val stack24 = new StackPane();
-    val stack25 = new StackPane(); val stack26 = new StackPane(); val stack27 = new StackPane(); val stack28 = new StackPane();
-    val stack29 = new StackPane(); val stack30 = new StackPane(); val stack31 = new StackPane(); val stack32 = new StackPane();
-    val stack33 = new StackPane(); val stack34 = new StackPane(); val stack35 = new StackPane(); val stack36 = new StackPane();
-    val stack37 = new StackPane(); val stack38 = new StackPane(); val stack39 = new StackPane(); val stack40 = new StackPane();
-    val stack41 = new StackPane(); val stack42 = new StackPane(); val stack43 = new StackPane(); val stack44 = new StackPane();
-    val stack45 = new StackPane(); val stack46 = new StackPane(); val stack47 = new StackPane(); val stack48 = new StackPane();
-    val stack49 = new StackPane(); val stack50 = new StackPane(); val stack51 = new StackPane(); val stack52 = new StackPane();
-    val stack53 = new StackPane(); val stack54 = new StackPane(); val stack55 = new StackPane(); val stack56 = new StackPane();
-    val stack57 = new StackPane(); val stack58 = new StackPane(); val stack59 = new StackPane(); val stack60 = new StackPane();
-    val stack61 = new StackPane(); val stack62 = new StackPane(); val stack63 = new StackPane(); val stack64 = new StackPane();
+    
 
-    val stackVect = Vector(stack1, stack2, stack3, stack4, stack5, stack6, stack7, stack8, stack9, stack10, stack11,
-      stack12, stack13, stack14, stack15, stack16, stack17, stack18, stack19, stack20, stack21, stack22, stack23, stack24,
-      stack25, stack26, stack27, stack28, stack29, stack30, stack31, stack32, stack33, stack34, stack35, stack36, stack37, stack38,
-      stack39, stack40, stack41, stack42, stack43, stack44, stack45, stack46, stack47, stack48, stack49, stack50, stack51, stack52,
-      stack53, stack54, stack55, stack56, stack57, stack58, stack59, stack60, stack61, stack62, stack63, stack64);
-
-    stack1.getChildren().addAll(rectOne, circ1); stack2.getChildren().addAll(rectTwo, circlesVector(2)); stack3.getChildren().addAll(rectThree, circ3);
-    stack4.getChildren().addAll(rectFour, circ4); stack5.getChildren().addAll(rectFive, circ5); stack6.getChildren().addAll(rectSix, circ6);
-    stack7.getChildren().addAll(rectSeven, circ7); stack8.getChildren().addAll(rectEight, circ8); stack9.getChildren().addAll(rectNine, circ9);
-    stack10.getChildren().addAll(rectTen, circ10); stack11.getChildren().addAll(rectEleven, circ11); stack12.getChildren().addAll(rectTwelve, circ12);
-    stack13.getChildren().addAll(rectThirteen, circ13); stack14.getChildren().addAll(rectFourteen, circ14); stack15.getChildren().addAll(rectFifteen, circ15);
-    stack16.getChildren().addAll(rectSixteen, circ16); stack17.getChildren().addAll(rectSeventeen, circ17); stack18.getChildren().addAll(rectEighteen, circ18);
-    stack19.getChildren().addAll(rectNineteen, circ19); stack20.getChildren().addAll(rectTwenty, circ20); stack21.getChildren().addAll(rectTwentyOne, circ21);
-    stack22.getChildren().addAll(rectTwentyTwo, circ22); stack23.getChildren().addAll(rectTwentyThree, circ23); stack24.getChildren().addAll(rectTwentyFour, circ24);
-    stack25.getChildren().addAll(rectTwentyFive, circ25); stack26.getChildren().addAll(rectTwentySix, circ26); stack27.getChildren().addAll(rectTwentySeven, circ27);
-    stack28.getChildren().addAll(rectTwentyEight, circ28); stack29.getChildren().addAll(rectTwentyNine, circ29); stack30.getChildren().addAll(rectThirty, circ30);
-    stack31.getChildren().addAll(rectThirtyOne, circ31); stack32.getChildren().addAll(rectThirtyTwo, circ32); stack33.getChildren().addAll(rectThirtyThree, circ33);
-    stack34.getChildren().addAll(rectThirtyFour, circ34); stack35.getChildren().addAll(rectThirtyFive, circ35); stack36.getChildren().addAll(rectThirtySix, circ36);
-    stack37.getChildren().addAll(rectThirtySeven, circ37); stack38.getChildren().addAll(rectThirtyEight, circ38); stack39.getChildren().addAll(rectThirtyNine, circ39);
-    stack40.getChildren().addAll(rectForty, circ40); stack41.getChildren().addAll(rectFortyOne, circ41); stack42.getChildren().addAll(rectFortyTwo, circ42);
-    stack43.getChildren().addAll(rectFortyThree, circ43); stack44.getChildren().addAll(rectFortyFour, circ34); stack45.getChildren().addAll(rectFortyFive, circ45);
-    stack46.getChildren().addAll(rectFortySix, circ46); stack47.getChildren().addAll(rectFortySeven, circ47); stack48.getChildren().addAll(rectFortyEight, circ48);
-    stack49.getChildren().addAll(rectFortyNine, circ49); stack50.getChildren().addAll(rectFifty, circ50); stack51.getChildren().addAll(rectFiftyOne, circ51);
-    stack52.getChildren().addAll(rectFiftyTwo, circ52); stack53.getChildren().addAll(rectFiftyThree, circ53); stack54.getChildren().addAll(rectFiftyFour, circ54);
-    stack55.getChildren().addAll(rectFiftyFive, circ55); stack56.getChildren().addAll(rectFiftySix, circ56); stack57.getChildren().addAll(rectFiftySeven, circ57);
-    stack58.getChildren().addAll(rectFiftyEight, circ58); stack59.getChildren().addAll(rectFiftyNine, circ59); stack60.getChildren().addAll(rectSixty, circ60);
-    stack61.getChildren().addAll(rectSixtyOne, circ61); stack62.getChildren().addAll(rectSixtyTwo, circ62); stack63.getChildren().addAll(rectSixtyThree, circ63);
-    stack64.getChildren().addAll(rectSixtyFour, circ64);
+    stackVect(0).getChildren().addAll(rectOne, circ1); stackVect(1).getChildren().addAll(rectTwo, circlesVector(2)); stackVect(2).getChildren().addAll(rectThree, circ3);
+    stackVect(3).getChildren().addAll(rectFour, circ4); stackVect(4).getChildren().addAll(rectFive, circ5); stackVect(5).getChildren().addAll(rectSix, circ6);
+    stackVect(6).getChildren().addAll(rectSeven, circ7); stackVect(7).getChildren().addAll(rectEight, circ8); stackVect(8).getChildren().addAll(rectNine, circ9);
+    stackVect(9).getChildren().addAll(rectTen, circ10); stackVect(10).getChildren().addAll(rectEleven, circ11); stackVect(11).getChildren().addAll(rectTwelve, circ12);
+    stackVect(12).getChildren().addAll(rectThirteen, circ13); stackVect(13).getChildren().addAll(rectFourteen, circ14); stackVect(14).getChildren().addAll(rectFifteen, circ15);
+    stackVect(15).getChildren().addAll(rectSixteen, circ16); stackVect(16).getChildren().addAll(rectSeventeen, circ17); stackVect(17).getChildren().addAll(rectEighteen, circ18);
+    stackVect(18).getChildren().addAll(rectNineteen, circ19); stackVect(19).getChildren().addAll(rectTwenty, circ20); stackVect(20).getChildren().addAll(rectTwentyOne, circ21);
+    stackVect(21).getChildren().addAll(rectTwentyTwo, circ22); stackVect(22).getChildren().addAll(rectTwentyThree, circ23); stackVect(23).getChildren().addAll(rectTwentyFour, circ24);
+    stackVect(24).getChildren().addAll(rectTwentyFive, circ25); stackVect(25).getChildren().addAll(rectTwentySix, circ26); stackVect(26).getChildren().addAll(rectTwentySeven, circ27);
+    stackVect(27).getChildren().addAll(rectTwentyEight, circ28); stackVect(28).getChildren().addAll(rectTwentyNine, circ29); stackVect(29).getChildren().addAll(rectThirty, circ30);
+    stackVect(30).getChildren().addAll(rectThirtyOne, circ31); stackVect(31).getChildren().addAll(rectThirtyTwo, circ32); stackVect(32).getChildren().addAll(rectThirtyThree, circ33);
+    stackVect(33).getChildren().addAll(rectThirtyFour, circ34); stackVect(34).getChildren().addAll(rectThirtyFive, circ35); stackVect(35).getChildren().addAll(rectThirtySix, circ36);
+    stackVect(36).getChildren().addAll(rectThirtySeven, circ37); stackVect(37).getChildren().addAll(rectThirtyEight, circ38); stackVect(38).getChildren().addAll(rectThirtyNine, circ39);
+    stackVect(39).getChildren().addAll(rectForty, circ40); stackVect(40).getChildren().addAll(rectFortyOne, circ41); stackVect(41).getChildren().addAll(rectFortyTwo, circ42);
+    stackVect(42).getChildren().addAll(rectFortyThree, circ43); stackVect(43).getChildren().addAll(rectFortyFour, circ34); stackVect(44).getChildren().addAll(rectFortyFive, circ45);
+    stackVect(45).getChildren().addAll(rectFortySix, circ46); stackVect(46).getChildren().addAll(rectFortySeven, circ47); stackVect(47).getChildren().addAll(rectFortyEight, circ48);
+    stackVect(48).getChildren().addAll(rectFortyNine, circ49); stackVect(49).getChildren().addAll(rectFifty, circ50); stackVect(50).getChildren().addAll(rectFiftyOne, circ51);
+    stackVect(51).getChildren().addAll(rectFiftyTwo, circ52); stackVect(52).getChildren().addAll(rectFiftyThree, circ53); stackVect(53).getChildren().addAll(rectFiftyFour, circ54);
+    stackVect(54).getChildren().addAll(rectFiftyFive, circ55); stackVect(55).getChildren().addAll(rectFiftySix, circ56); stackVect(56).getChildren().addAll(rectFiftySeven, circ57);
+    stackVect(57).getChildren().addAll(rectFiftyEight, circ58); stackVect(58).getChildren().addAll(rectFiftyNine, circ59); stackVect(59).getChildren().addAll(rectSixty, circ60);
+    stackVect(60).getChildren().addAll(rectSixtyOne, circ61); stackVect(61).getChildren().addAll(rectSixtyTwo, circ62); stackVect(62).getChildren().addAll(rectSixtyThree, circ63);
+    stackVect(63).getChildren().addAll(rectSixtyFour, circ64);
 
     // root.getChildren().add(rectOne);
-    hbox1.getChildren().addAll(stack1, stack2, stack3, stack4, stack5, stack6, stack7, stack8)
-    hbox2.getChildren().addAll(stack9, stack10, stack11, stack12, stack13, stack14, stack15, stack16)
-    hbox3.getChildren().addAll(stack17, stack18, stack19, stack20, stack21, stack22, stack23, stack24)
-    hbox4.getChildren().addAll(stack25, stack26, stack27, stack28, stack29, stack30, stack31, stack32)
-    hbox5.getChildren().addAll(stack33, stack34, stack35, stack36, stack37, stack38, stack39, stack40)
-    hbox6.getChildren().addAll(stack41, stack42, stack43, stack44, stack45, stack46, stack47, stack48)
-    hbox7.getChildren().addAll(stack49, stack50, stack51, stack52, stack53, stack54, stack55, stack56)
-    hbox8.getChildren().addAll(stack57, stack58, stack59, stack60, stack61, stack62, stack63, stack64)
+    hbox1.getChildren().addAll(stackVect(0),stackVect(1),stackVect(2),stackVect(3),stackVect(4),stackVect(5),stackVect(6),stackVect(7))
+    hbox2.getChildren().addAll(stackVect(8),stackVect(9),stackVect(10),stackVect(11),stackVect(12),stackVect(13),stackVect(14),stackVect(15))
+    hbox3.getChildren().addAll(stackVect(16),stackVect(17),stackVect(18),stackVect(19),stackVect(20),stackVect(21),stackVect(22),stackVect(23))
+    hbox4.getChildren().addAll(stackVect(24),stackVect(25),stackVect(26),stackVect(27),stackVect(28),stackVect(29),stackVect(30),stackVect(31))
+    hbox5.getChildren().addAll(stackVect(32),stackVect(33),stackVect(34),stackVect(35),stackVect(36),stackVect(37),stackVect(38),stackVect(39))
+    hbox6.getChildren().addAll(stackVect(40),stackVect(41),stackVect(42),stackVect(43),stackVect(44),stackVect(45),stackVect(46),stackVect(47))
+    hbox7.getChildren().addAll(stackVect(48),stackVect(49),stackVect(50),stackVect(51),stackVect(52),stackVect(53),stackVect(54),stackVect(55))
+    hbox8.getChildren().addAll(stackVect(56),stackVect(57),stackVect(58),stackVect(59),stackVect(60),stackVect(61),stackVect(62),stackVect(63))
     hbox9.getChildren().addAll(buttonGo, buttonTextFields, textField1, textField2, textField3)
     vbox.getChildren().addAll(hbox1, hbox2, hbox3, hbox4, hbox5, hbox6, hbox7, hbox8, hbox9)
     stage.setScene(new Scene(vbox, 500, 500));
