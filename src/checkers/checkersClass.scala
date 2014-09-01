@@ -17,7 +17,12 @@ import javafx.scene.shape.Circle
 class ScalaJavaFXApp extends Application {
   println("ScalaJavaFXApp constructor")
   def start(stage: Stage): Unit = {
+    
+//    val circleVect = Vector(new Circle,new Circle(25),new Circle,new Circle(25),new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,
+//        new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle,new Circle)
        
+    //change to 24 or 23
+    
     val circ1 = new Circle; val circ2 = new Circle(25); val circ3 = new Circle; val circ4 = new Circle(25); val circ5 = new Circle;
     val circ6 = new Circle(25); val circ7 = new Circle; val circ8 = new Circle(25); val circ9 = new Circle(25); val circ10 = new Circle;
     val circ11 = new Circle(25); val circ12 = new Circle; val circ13 = new Circle(25); val circ14 = new Circle; val circ15 = new Circle(25);
@@ -53,44 +58,20 @@ class ScalaJavaFXApp extends Application {
 
     }
 
-    val spaceOne = new space(1, 1); val spaceTwo = new space(2, 1); val spaceThree = new space(3, 1); val spaceFour = new space(4, 1);
-    val spaceFive = new space(5, 1); val spaceSix = new space(6, 1); val spaceSeven = new space(7, 1); val spaceEight = new space(8, 1);
-    val spaceNine = new space(9, 2); val spaceTen = new space(10, 2); val spaceEleven = new space(11, 2); val spaceTwelve = new space(12, 2);
-    val spaceThirteen = new space(13, 2); val spaceFourteen = new space(14, 2); val spaceFifteen = new space(15, 2); val spaceSixteen = new space(16, 3);
-    val spaceSeventeen = new space(17, 3); val spaceEighteen = new space(18, 3); val spaceNineteen = new space(19, 3); val spaceTwenty = new space(20, 3);
-    val spaceTwentyOne = new space(21, 3); val spaceTwentyTwo = new space(22, 3); val spaceTwentyThree = new space(23, 3); val spaceTwentyFour = new space(24, 4);
-    val spaceTwentyFive = new space(25, 4); val spaceTwentySix = new space(26, 4); val spaceTwentySeven = new space(27, 4); val spaceTwentyEight = new space(28, 4);
-    val spaceTwentyNine = new space(29, 4); val spaceThirty = new space(30, 4); val spaceThirtyOne = new space(31, 4); val spaceThirtyTwo = new space(32, 5);
-    val spaceThirtyThree = new space(33, 5); val spaceThirtyFour = new space(34, 5); val spaceThirtyFive = new space(35, 5); val spaceThirtySix = new space(36, 5);
-    val spaceThirtySeven = new space(37, 5); val spaceThirtyEight = new space(38, 5); val spaceThirtyNine = new space(39, 5);
-    val spaceForty = new space(40, 6); val spaceFortyOne = new space(41, 6); val spaceFortyTwo = new space(42, 6); val spaceFortyThree = new space(43, 6);
-    val spaceFortyFour = new space(44, 6); val spaceFortyFive = new space(45, 6); val spaceFortySix = new space(46, 6); val spaceFortySeven = new space(47, 6);
-    val spaceFortyEight = new space(48, 6); val spaceFortyNine = new space(49, 6); val spaceFifty = new space(50, 6); val spaceFiftyOne = new space(51, 6);
-    val spaceFiftyTwo = new space(52, 6); val spaceFiftyThree = new space(53, 6); val spaceFiftyFour = new space(54, 6); val spaceFiftyFive = new space(55, 6);
-    val spaceFiftySix = new space(56, 6); val spaceFiftySeven = new space(57, 6); val spaceFiftyEight = new space(58, 6); val spaceFiftyNine = new space(59, 6);
-    val spaceSixty = new space(60, 6); val spaceSixtyOne = new space(61, 6); val spaceSixtyTwo = new space(6, 26); val spaceSixtyThree = new space(63, 6);
-    val spaceSixtyFour = new space(64, 6);
-
-    val spacesVector = Vector(spaceOne, spaceTwo, spaceThree, spaceFour, spaceFive, spaceSix, spaceSeven, spaceEight, spaceNine, spaceTen,
-      spaceEleven, spaceTwelve, spaceThirteen, spaceFourteen, spaceFifteen, spaceSixteen, spaceSeventeen, spaceEighteen, spaceNineteen,
-      spaceTwenty, spaceTwentyOne, spaceTwentyTwo, spaceTwentyThree, spaceTwentyFour, spaceTwentyFive, spaceTwentySix, spaceTwentySeven,
-      spaceTwentyEight, spaceTwentyNine, spaceThirty, spaceThirtyOne, spaceThirtyTwo, spaceThirtyThree, spaceThirtyFour, spaceThirtyFive,
-      spaceThirtySix, spaceThirtySeven, spaceThirtyEight, spaceThirtyNine, spaceForty, spaceFortyOne, spaceFortyTwo, spaceFortyThree,
-      spaceFortyFour, spaceFortyFive, spaceFortySix, spaceFortySeven, spaceFortyEight, spaceFortyNine, spaceFifty, spaceFiftyOne, spaceFiftyTwo,
-      spaceFiftyThree, spaceFiftyFour, spaceFiftyFive, spaceFiftySix, spaceFiftySeven, spaceFiftyEight, spaceFiftyNine, spaceSixty, spaceSixtyOne,
-      spaceSixtyTwo, spaceSixtyThree, spaceSixtyFour)
+    val spaceVect = Vector(new space(1,1), new space(2,1), new space(3,1),new space(4,1),new space(5,1),new space(6,1),new space(7,1),new space(8,1),new space(9,2),new space(10,2),new space(11,2),new space(12,2),new space(13,2),new space(14,2),new space(15,2),new space(16,3),new space(17,3),new space(18,3),new space(19,3),new space(20,3),new space(21,3),new space(22,3),new space(23,3),new space(24,4),new space(25,4),new space(26,4),new space(27,4),new space(28,4),new space(29,4),new space(30,4),new space(31,4),new space(32,5),
+        new space(33,5),new space(34,5),new space(35,5),new space(36,5),new space(37,5),new space(38,5),new space(39,5),new space(40,6),new space(41,6),new space(42,6),new space(43,6),new space(44,6),new space(45,6),new space(46,6),new space(47,6),new space(48,7),new space(49,7),new space(50,7),new space(51,7),new space(52,7),new space(53,7),new space(54,7),new space(55,7),new space(56,8),new space(57,8),new space(58,8),new space(59,8),new space(60,8),new space(61,8),new space(62,8),new space(63,8),new space(64,8))
 
     //spacesVector(32).isTakenByBlack = true;
 
-    spaceTwo.isTakenByBlack = true; spaceFour.isTakenByBlack = true; spaceSix.isTakenByBlack = true; spaceEight.isTakenByBlack = true;
-    spaceNine.isTakenByBlack = true; spaceEleven.isTakenByBlack = true; spaceThirteen.isTakenByBlack = true; spaceFifteen.isTakenByBlack = true;
-    spaceEighteen.isTakenByBlack = true; spaceTwenty.isTakenByBlack = true; spaceTwentyTwo.isTakenByBlack = true; spaceTwentyFour.isTakenByBlack = true;
-   // spaceTwentySeven.isTaken = false
-    //spaceTwentySeven.isTakenByBlack=false
-    spaceTwentySeven.isTakenByRed=false
+    spaceVect(1).isTakenByBlack = true; spaceVect(3).isTakenByBlack = true; spaceVect(5).isTakenByBlack = true; spaceVect(7).isTakenByBlack = true;
+    spaceVect(8).isTakenByBlack = true; spaceVect(10).isTakenByBlack = true; spaceVect(12).isTakenByBlack = true; spaceVect(14).isTakenByBlack = true;
+    spaceVect(17).isTakenByBlack = true; spaceVect(19).isTakenByBlack = true; spaceVect(21).isTakenByBlack = true; spaceVect(23).isTakenByBlack = true;
+    spaceVect(26).isTaken = false
+    spaceVect(26).isTakenByBlack=false
+    spaceVect(26).isTakenByRed=false
     //start new edit
 
-    val aRange = Range(2, 64, 2)
+    val aRange = Range(1, 63, 2)
 
     //end new edit
 
@@ -114,23 +95,23 @@ class ScalaJavaFXApp extends Application {
     val buttonGo = new Button
     buttonGo.setOnAction(new EventHandler[ActionEvent]() {
       override def handle(event: ActionEvent): Unit = {
-        if (spacesVector(numOne).isTakenByBlack && spacesVector(numTwo).isTaken == false && (numOne + numTwo == 7 || numOne + numTwo == 9) &&
-          spacesVector(numOne).numberOfLine + 1 == spacesVector(numTwo).numberOfLine && spacesVector(numOne).isKing == false) {
-          spacesVector(numOne).isTaken == false
-          spacesVector(numOne).isTakenByBlack == false
-          spacesVector(numTwo).isTakenByBlack == true
+        if (spaceVect(numOne).isTakenByBlack && spaceVect(numTwo).isTaken == false && (numOne + numTwo == 7 || numOne + numTwo == 9) &&
+          spaceVect(numOne).numberOfLine + 1 == spaceVect(numTwo).numberOfLine && spaceVect(numOne).isKing == false) {
+          spaceVect(numOne).isTaken == false
+          spaceVect(numOne).isTakenByBlack == false
+          spaceVect(numTwo).isTakenByBlack == true
 
-        } else if (spacesVector(numOne).isTakenByBlack == true && (spacesVector(numOne + 7).isTakenByRed == true ||
-          spacesVector(numOne + 9).isTakenByRed == true) && spacesVector(numTwo).isTaken == false && (spacesVector(numTwo - 14) == spacesVector(numOne)
-            || spacesVector(numTwo - 18) == spacesVector(numOne))) {
-          spacesVector(numOne).isTaken == false //and they are two lines apart
-          spacesVector(numTwo).isTakenByBlack == true
-          if (spacesVector(numOne) == spacesVector(numTwo - 14)) {
-            spacesVector(numOne + 7).isTaken == false
-            spacesVector(numOne + 7).isTakenByRed == false
-          } else if (spacesVector(numOne) == spacesVector(numTwo - 18)) {
-            spacesVector(numOne + 9).isTaken == false
-            spacesVector(numOne + 9).isTakenByRed == false
+        } else if (spaceVect(numOne).isTakenByBlack == true && (spaceVect(numOne + 7).isTakenByRed == true ||
+          spaceVect(numOne + 9).isTakenByRed == true) && spaceVect(numTwo).isTaken == false && (spaceVect(numTwo - 14) == spaceVect(numOne)
+            || spaceVect(numTwo - 18) == spaceVect(numOne))) {
+          spaceVect(numOne).isTaken == false //and they are two lines apart
+          spaceVect(numTwo).isTakenByBlack == true
+          if (spaceVect(numOne) == spaceVect(numTwo - 14)) {
+            spaceVect(numOne + 7).isTaken == false
+            spaceVect(numOne + 7).isTakenByRed == false
+          } else if (spaceVect(numOne) == spaceVect(numTwo - 18)) {
+            spaceVect(numOne + 9).isTaken == false
+            spaceVect(numOne + 9).isTakenByRed == false
           }
 
         }
@@ -138,11 +119,11 @@ class ScalaJavaFXApp extends Application {
         //      spacesVector(numOne).numberOfLine + 1 = spacesVector(numTwo).numberOfLine && spacesVector(numOne).isKing == false)
         // }
       }
-      val aRange = Range(2, 64, 2)
+      val aRange = Range(1, 63, 2)
       for (x <- aRange) {
-      if (spacesVector(x).isTakenByBlack) {
+      if (spaceVect(x).isTakenByBlack) {
         circlesVector(x).setFill(Color.BLACK)
-      } else if (spacesVector(x).isTakenByRed) {
+      } else if (spaceVect(x).isTakenByRed) {
         circlesVector(x).setFill(Color.RED)
       } else {
         circlesVector(x).setFill(Color.GREY)
@@ -151,9 +132,9 @@ class ScalaJavaFXApp extends Application {
     })
 
     for (x <- aRange) {
-      if (spacesVector(x).isTakenByBlack) {
+      if (spaceVect(x).isTakenByBlack) {
         circlesVector(x).setFill(Color.BLACK)
-      } else if (spacesVector(x).isTakenByRed) {
+      } else if (spaceVect(x).isTakenByRed) {
         circlesVector(x).setFill(Color.RED)
       } else {
         circlesVector(x).setFill(Color.GREY)
